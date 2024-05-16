@@ -13,5 +13,11 @@ pipeline {
       }
     }
 
+    stage('build') {
+      steps {
+        sh 'python3 hello.py'
+      }
+    }
+
   }
 }
