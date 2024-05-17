@@ -10,7 +10,7 @@ pipeline {
     stage('checkout') {
       steps {
         git url: 'git@github.com:Vinaysh259/demoJenkinsfile.git'
-            branch: 'master',
+            branch: master,
             credentialsId: 'github_ssh'
             
 
