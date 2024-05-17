@@ -1,5 +1,5 @@
 pipeline {
-  agent linuxslave1
+  agent 'linuxslave1'
   stages {
     stage('Stage 1') {
       steps {
