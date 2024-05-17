@@ -19,5 +19,11 @@ pipeline {
       }
     }
 
+    stage('docker build') {
+      steps {
+        sh 'docker build -t demo:latest .'
+      }
+    }
+
   }
 }
