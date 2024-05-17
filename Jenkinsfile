@@ -1,5 +1,5 @@
 pipeline {
-  agent any
+  agent linuxslave1
   stages {
     stage('Stage 1') {
       steps {
@@ -9,7 +9,7 @@ pipeline {
 
     stage('checkout') {
       steps {
-        git(url: 'https://github.com/Vinaysh259/demoJenkinsfile.git', branch: 'master', poll: true)
+        git(url: 'https://github.com/Vinaysh259/demoJenkinsfile.git', branch: 'master')
       }
     }
 
