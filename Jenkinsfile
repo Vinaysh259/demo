@@ -9,9 +9,10 @@ pipeline {
 
     stage('checkout') {
       steps {
-        git branch: 'master',
+        git url: 'git@github.com:Vinaysh259/demoJenkinsfile.git'
+            branch: 'master',
             credentialsId: 'github_ssh'
-            url: 'git@github.com:Vinaysh259/demoJenkinsfile.git'
+            
 
             sh "ls -lat"
       }
